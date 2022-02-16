@@ -1,0 +1,77 @@
+:root{
+   
+    font-family: 'Lobster', cursive;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 98vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Etch-a-SketchContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: firebrick;
+    height: 70%;
+    width: 50%;
+    /*padding: 5%;*/
+    border-radius: 20px;
+    border-style: outset;
+    border-width: 6px;
+    
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    flex-grow: 3;
+    flex-shrink: 0;
+    height: 66%;
+    width: 66%;
+    border-style: inset;
+    border-color: rgb(143, 138, 138);
+    border-width: 2px;
+}
+
+.gridSquare{
+    border: 1px solid grey;
+    background-color: rgb(143, 138, 138);
+}
+
+#wheels,
+header{
+    height: 30%;
+    
+}
+
+header{
+    font-size: 3.5vw;
+    color:goldenrod;
+}
+
+#wheels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+#wheels > button{
+    border-radius: 100px;
+    width: 8vh;
+    height: 8vh;
+    font-size: 1.6vh;
+    font-family: 'Lobster', cursive;
+
+}
