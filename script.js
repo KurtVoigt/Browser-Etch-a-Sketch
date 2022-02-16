@@ -30,7 +30,6 @@ function resize(newSize) {
             let gridSquare = document.createElement("div");
             gridSquare.addEventListener("mouseover", draw);
             gridSquare.classList.add("gridSquare");
-            gridSquare.style.cs
             grid.appendChild(gridSquare);
         }
     }
@@ -48,6 +47,11 @@ function clear() {
 }
 function rainbow() {
     rainbowColors = !rainbowColors;
+    if(rainbowColors){
+        rainbowButton.innerText = "Dark Mode";
+    }
+    else
+    rainbowButton.innerText = "Rainbow Mode";
 }
 
 
@@ -55,6 +59,5 @@ for (let i = 0; i < 16; i++) {
     let gridSquare = document.createElement("div");
     gridSquare.addEventListener("mouseover", draw);
     gridSquare.classList.add("gridSquare");
-    gridSquare.style.cs
     grid.appendChild(gridSquare);
 }
